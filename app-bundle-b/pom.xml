@@ -16,7 +16,8 @@
 		<jvmVersion>11+</jvmVersion>
 		<projectname>appbundle-demo</projectname>
 		
-		<standalone-main-class>org.bidib.sample.appbundlea.SpringBootSwingApplication</standalone-main-class>
+		<!-- standalone-main-class>org.bidib.sample.appbundlea.SpringBootSwingApplication</standalone-main-class -->
+		<standalone-main-class>org.springframework.boot.loader.JarLauncher</standalone-main-class>
 	</properties>
     <dependencies>
         <dependency>
