@@ -23,6 +23,12 @@
         <dependency>
             <groupId>org.bidib.sample</groupId>
             <artifactId>app-bundle-a</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
     <build>
@@ -61,6 +67,7 @@
                         <dmgFileName>${projectname}-${project.version}</dmgFileName>
                     </dmg>
 					<app>
+                        <!-- includeDependencies>false</includeDependencies -->
 						<!--
 						<additionalResources>
 							<resource>
